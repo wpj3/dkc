@@ -1,0 +1,242 @@
+{
+  "0": {
+    "id": "0",
+    "name": "Verdict of God",
+    "description": "He brings the final verdict as the right hand of God - whether it's a death malediction or forgiveness, the finality is out of the question.",
+    "imageUrl": "https://metadata.dkdao.network/static/verdict-of-god.png"
+  },
+  "1": {
+    "id": "1",
+    "name": "Banished Fairy",
+    "description": "Betrayed by her own peers and exiled in eternity from Fairyland, Banished Fairy has revenge as the only thing that keeps up her hope for survival. ",
+    "imageUrl": "https://metadata.dkdao.network/static/banished-fairy.png"
+  },
+  "2": {
+    "id": "2",
+    "name": "Wrath of The Sea",
+    "description": "You wish it were actually the end of the world! The catastrophic power of these monstrous creatures are just beyond what the world can imagine.",
+    "imageUrl": "https://metadata.dkdao.network/static/wrath-of-the-sea.png"
+  },
+  "3": {
+    "id": "3",
+    "name": "Eternal Storm",
+    "description": "Fuelled with wandering enraged souls, Eternal Storm sends ships, humans and monsters alike down insidious spirals of death and revenge. ",
+    "imageUrl": "https://metadata.dkdao.network/static/eternal-storm.png"
+  },
+  "4": {
+    "id": "4",
+    "name": "Skadi",
+    "description": "One of the best lancers and most prominent Dark Elves, Skadi is chosen to head black moon guild and also the closest servant to the Seniors",
+    "imageUrl": "https://metadata.dkdao.network/static/skadi.png"
+  },
+  "5": {
+    "id": "5",
+    "name": "Unforgiven Creatures",
+    "description": "Foregone fearless Naga warriors turn Demons as they fled to Deep Sea and submerged in Dark Matters.",
+    "imageUrl": "https://metadata.dkdao.network/static/unforgiven-creatures.png"
+  },
+  "6": {
+    "id": "6",
+    "name": "Deadly Pool",
+    "description": "No survivors have been recorded to recount what happened to them once they were jinxed and dragged down this madness called Deadly Pool.",
+    "imageUrl": "https://metadata.dkdao.network/static/deadly-pool.png"
+  },
+  "7": {
+    "id": "7",
+    "name": "Euphemia",
+    "description": "One of the most striking magicians of the Elf, Euphemia is blessed by the World Tree tribe with unmatched aquatic magic.",
+    "imageUrl": "https://metadata.dkdao.network/static/euphemia.png"
+  },
+  "8": {
+    "id": "8",
+    "name": "Sayyida",
+    "description": "Don't let her look fool you! Sayyida is one of the most ruthless reigning over seven seas.",
+    "imageUrl": "https://metadata.dkdao.network/static/sayyida.png"
+  },
+  "9": {
+    "id": "9",
+    "name": "Shadowmare",
+    "description": "Coming from Dark Rift, they reside in human's subconscious minds and live off angst and fear to grow up till they can tear human's flesh apart and step out and destroy the world.",
+    "imageUrl": "https://metadata.dkdao.network/static/shadowmare.png"
+  },
+  "10": {
+    "id": "10",
+    "name": "Deepsea's Hunger",
+    "description": "Trapped between the wrath of the sea and the thirst for revenge and bloodshed battles, Deepsea's hunger is the living menace to all sea creatures",
+    "imageUrl": "https://metadata.dkdao.network/static/deepsea-s-hunger.png"
+  },
+  "11": {
+    "id": "11",
+    "name": "Krakenetics",
+    "description": "This ancient beast likes to toy with humans and boats as if the sea were their own playground.",
+    "imageUrl": "https://metadata.dkdao.network/static/krakenetics.png"
+  },
+  "12": {
+    "id": "12",
+    "name": "Death Knight",
+    "description": "Ancient Liches convene the strongest anathema to ravage these living lethal weapons and render them soulless and merciless creatures.",
+    "imageUrl": "https://metadata.dkdao.network/static/death-knight.png"
+  },
+  "13": {
+    "id": "13",
+    "name": "Mighty Fist",
+    "description": "Crafted through countless battles and bloodshed, Mighty Fist has courage as his badge of honor and respect as his coat of arms.",
+    "imageUrl": "https://metadata.dkdao.network/static/mighty-fist.png"
+  },
+  "14": {
+    "id": "14",
+    "name": "Aoife",
+    "description": "A dedicated warrior and warden of the sea against demons and devils of Deepsea.",
+    "imageUrl": "https://metadata.dkdao.network/static/aoife.png"
+  },
+  "15": {
+    "id": "15",
+    "name": "Corock",
+    "description": "Corock are the most sought after mercenaries who are rendered numb to threats and death through countless blood-soaked wars. They possess the power of dwarves and the flair of goblins.",
+    "imageUrl": "https://metadata.dkdao.network/static/corock.png"
+  },
+  "16": {
+    "id": "16",
+    "name": "Little Johnny",
+    "description": "Born and bred in the slumps of a coastal town, Johnny learnt bags of tricks that help keep him alive even through deadliest monsters and the most fatal battles. He has distinct charisma to his entourage who will sacrifice their souls for him.",
+    "imageUrl": "https://metadata.dkdao.network/static/little-johnny.png"
+  },
+  "17": {
+    "id": "17",
+    "name": "Nix",
+    "description": "A real warrior with teeth and a great companion of Johnny",
+    "imageUrl": "https://metadata.dkdao.network/static/nix.png"
+  },
+  "18": {
+    "id": "18",
+    "name": "Regalia of the Sea",
+    "description": "The best Dwarf craftsmen were massacred right after they completed crafting the Regalia masterpiece so no replica can be produced.This treasure brings power and curse to whoever wants to claim it for their own goods.",
+    "imageUrl": "https://metadata.dkdao.network/static/regalia-of-the-sea.png"
+  },
+  "19": {
+    "id": "19",
+    "name": "Undying Sailor",
+    "description": "\"Deadmen tell no tales\" - but what if they are not dead? Coined with hunger and vengeance, Undying Sailors can unveil the most horror tales that you wish never existed!",
+    "imageUrl": "https://assets.duelistking.com/undying-sailor.png"
+  },
+  "20": {
+    "id": "20",
+    "name": "Abaddon Demon",
+    "description": "A giant demon guarding the holy temple that holds treasure and precious jewels. His red eyes can burn anything to ash. No one can destroy it.",
+    "imageUrl": "https://metadata.dkdao.network/static/abaddon-demon.png"
+  },
+  "21": {
+    "id": "21",
+    "name": "MoonBow",
+    "description": "A goddess of archery, member of the dark elf clan and worshipper of the black moon.",
+    "imageUrl": "https://metadata.dkdao.network/static/moonbow.png"
+  },
+  "22": {
+    "id": "22",
+    "name": "Gwyneira Empress",
+    "description": "The land of spotless snow is where the Empress resides. Cold, powerful, dangerous and magnificent.",
+    "imageUrl": "https://metadata.dkdao.network/static/gwyneira-empress.png"
+  },
+  "23": {
+    "id": "23",
+    "name": "Black Wilderness",
+    "description": "Abiding in a black forest, he represents tranquility amidst chaos. A protector of his realm, like a tree, he sheds comfort to those who seek peace and fury to those trying to conquer his land.",
+    "imageUrl": "https://metadata.dkdao.network/static/black-wilderness.png"
+  },
+  "24": {
+    "id": "24",
+    "name": "Hades Blaze",
+    "description": "The dead sea nurtures souls and the elixir gems. It also houses a ruthless demon that is formed from bones and the green eternal fire of hell. Anyone who looks into his eyes will face the wrath of death.",
+    "imageUrl": "https://metadata.dkdao.network/static/hades-blaze.png"
+  },
+  "25": {
+    "id": "25",
+    "name": "Inferno Dragon",
+    "description": "Bred in the flames of caldera where nothing else survives, the dragon can unleash fire which no living creature can outlast, only the gods can slaughter it.",
+    "imageUrl": "https://metadata.dkdao.network/static/inferno-dragon.png"
+  },
+  "26": {
+    "id": "26",
+    "name": "Xalvador the Armor",
+    "description": "A honorable knight, well-guarded with a shining armor and a master sword. Fearless and fierce, he has defeated evil figures under the patronage of war gods.",
+    "imageUrl": "https://metadata.dkdao.network/static/xalvador-the-armor.png"
+  },
+  "27": {
+    "id": "27",
+    "name": "Draggok the Orc",
+    "description": "Known for his courage and strength, he has demolished his enemies as an unfeigned leader of the Orc Army.",
+    "imageUrl": "https://assets.duelistking.com/draggok-the-orc.png"
+  },
+  "28": {
+    "id": "28",
+    "name": "William Archer",
+    "description": "A cold-blooded archer, a silent killer who can attack with both bow and darts. Quiet but deadly.",
+    "imageUrl": "https://metadata.dkdao.network/static/william-archer.png"
+  },
+  "29": {
+    "id": "29",
+    "name": "Shaitan Devil",
+    "description": "A demon that lives in the deepest level of hell",
+    "imageUrl": "https://assets.duelistking.com/shaitan-devil.png"
+  },
+  "30": {
+    "id": "30",
+    "name": "Zosimos the Wizard",
+    "description": "A wizard who can command lightning. He's a disciple to the king and widely known for his never-ending loyalty. ",
+    "imageUrl": "https://metadata.dkdao.network/static/zosimos-the-wizard.png"
+  },
+  "31": {
+    "id": "31",
+    "name": "Hunter Muzzle",
+    "description": "A resilient bounty hunter who is always ready for challenges. Hidden from the world, he crawls out in the night to chase his targets.",
+    "imageUrl": "https://assets.duelistking.com/hunter-muzzle.png"
+  },
+  "32": {
+    "id": "32",
+    "name": "Amenia the Queen",
+    "description": "An epicurean and powerful queen that reigns a loyal and well-trained army. She has led her kingdom to unprecedented wealth by her shrewdness.",
+    "imageUrl": "https://assets.duelistking.com/amenia-the-queen.png"
+  },
+  "33": {
+    "id": "33",
+    "name": "Soulsucker",
+    "description": "Caged souls which reside between life and death. Unlucky are those who wander to their land, they will have their souls sucked in and end up becoming one of them.",
+    "imageUrl": "https://metadata.dkdao.network/static/soulsucker.png"
+  },
+  "34": {
+    "id": "34",
+    "name": "The Sea Abyss",
+    "description": "With a giant body and a gigantic mouth, it destroys all boats and ships wandering in its proximity within the sea.",
+    "imageUrl": "https://metadata.dkdao.network/static/the-sea-abyss.png"
+  },
+  "35": {
+    "id": "35",
+    "name": "Holy Eyes",
+    "description": "A battle-scarred supreme god, who's worldliness can see the truth, through the depth of anyone's eyes.",
+    "imageUrl": "https://metadata.dkdao.network/static/holy-eyes.png"
+  },
+  "36": {
+    "id": "36",
+    "name": "Anansi Venom",
+    "description": "A monstrous spider that lives deep in the black forest. Its venom is deadly enough to cause death to those bitten by it.",
+    "imageUrl": "https://metadata.dkdao.network/static/anansi-venom.png"
+  },
+  "37": {
+    "id": "37",
+    "name": "Thanatos Guard",
+    "description": "Legend has it, this is the armor of a warrior from hell. The armor can shield against any malicious magic. The armor decides the chosen one, those who dare to try out their luck by putting it on will be killed.",
+    "imageUrl": "https://metadata.dkdao.network/static/thanatos-guard.png"
+  },
+  "38": {
+    "id": "38",
+    "name": "Hobbit Flair",
+    "description": "A clan of hobbits, they have a knack for mechanics like producing and fixing weapons, armor, ships and anything in between.",
+    "imageUrl": "https://metadata.dkdao.network/static/hobbit-flair.png"
+  },
+  "39": {
+    "id": "39",
+    "name": "Goblin Alchemist",
+    "description": "Part of the goblin clan, mischievous yet loyal to death to their master. He has a special ability to produce poisons.",
+    "imageUrl": "https://metadata.dkdao.network/static/goblin-alchemist.png"
+  }
+}
