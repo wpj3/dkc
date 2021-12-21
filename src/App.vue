@@ -71,10 +71,10 @@ async function getQuery(address: string) {
         params,
       }
     );
-    const { status, result } = res.data;
+    const { result } = res.data;
     if (typeof result === "string") {
       throw new Error(result);
-    } else if (status === "1") {
+    } else {
       const lowercased = address.toLowerCase();
 
       txs.value = result.reduce((acc, tx) => {
