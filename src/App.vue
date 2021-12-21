@@ -109,7 +109,7 @@ async function getQuery(address: string) {
 
 async function query(address: string) {
   const params = new URLSearchParams(window.location.search);
-  if (params.has("address") && params.get("address") !== address) {
+  if (params.get("address") !== address) {
     const data = { address };
     window.history.pushState(
       data,
