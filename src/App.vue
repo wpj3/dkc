@@ -98,12 +98,15 @@ async function getQuery(address: string) {
 }
 
 async function query(address: string) {
-  const data = { address };
-  window.history.pushState(
-    data,
-    "",
-    `/?${new URLSearchParams(data).toString()}`
-  );
+  const params = new URLSearchParams(window.location.search);
+  if (params.has("address") && params.get("address") !== address) {
+    const data = { address };
+    window.history.pushState(
+      data,
+      "",
+      `/?${new URLSearchParams(data).toString()}`
+    );
+  }
 
   await getQuery(address);
 }
