@@ -184,28 +184,37 @@ onUnmounted(() => {
         {{ loading ? "Please wait..." : "Query" }}
       </button>
     </div>
-    <div v-if="message" class="mt-1 text-sm text-blue-600">
-      {{ message }}
-    </div>
 
-    <div class="mt-6 text-xl font-medium">Total cards: {{ totalCount }}</div>
-    <div
-      class="
-        mt-4
-        grid grid-cols-1
-        gap-y-10 gap-x-6
-        sm:grid-cols-2
-        md:grid-cols-3
-        lg:grid-cols-4
-        xl:grid-cols-5 xl:gap-x-8
-      "
-    >
-      <DuelistKingCard
-        v-for="(count, id) in txs"
-        :key="id"
-        :id="id"
-        :count="count"
-      />
+    <div class="relative">
+      <div
+        v-if="message"
+        class="absolute top-12 left-0 right-0 font-medium text-lg text-center"
+      >
+        {{ message }}
+      </div>
+      <div :class="{ 'opacity-10': message || loading }">
+        <div class="mt-6 text-xl font-medium">
+          Total cards: {{ totalCount }}
+        </div>
+        <div
+          class="
+            mt-4
+            grid grid-cols-1
+            gap-y-10 gap-x-6
+            sm:grid-cols-2
+            md:grid-cols-3
+            lg:grid-cols-4
+            xl:grid-cols-5 xl:gap-x-8
+          "
+        >
+          <DuelistKingCard
+            v-for="(count, id) in txs"
+            :key="id"
+            :id="id"
+            :count="count"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </template>
