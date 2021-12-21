@@ -32,8 +32,6 @@ interface Response<T> {
   result: T;
 }
 
-const DKC_ADDRESS = "0xc44b1022f4895f3c04e965f8a82437a8b5cebb70";
-
 const loading = ref(false);
 const inputAddress = ref("");
 const message = ref("");
@@ -47,45 +45,57 @@ const totalCount = computed(() => {
   return Intl.NumberFormat().format(count);
 });
 
+const createQuery =
+  (source: string, contractaddress: string) => async (address: string) => {
+    const params = {
+      module: "account",
+      action: "tokennfttx",
+      contractaddress,
+      address,
+      startblock: "0",
+      endblock: "999999999",
+      sort: "asc",
+    };
+    return axios.get<Response<Tx[] | string>>(`https://api.${source}.com/api`, {
+      timeout: 60000,
+      params,
+    });
+  };
+
+const DKC_ADDRESS = "0xc44b1022f4895f3c04e965f8a82437a8b5cebb70";
+const ftmQuery = createQuery("ftmscan", DKC_ADDRESS);
+
+const DKDAOI_ADDRESS = "0xb5c01956842cE3a658109776215F86CA4FeE2CBc";
+const polygonQuery = createQuery("polygonscan", DKDAOI_ADDRESS);
+
 async function getQuery(address: string) {
   if (loading.value) return;
 
   loading.value = true;
   message.value = "";
 
-  const params = {
-    module: "account",
-    action: "tokennfttx",
-    contractaddress: DKC_ADDRESS,
-    address,
-    startblock: "0",
-    endblock: "999999999",
-    sort: "asc",
-  };
-
   try {
-    const res = await axios.get<Response<Tx[] | string>>(
-      "https://api.ftmscan.com/api",
-      {
-        timeout: 60000,
-        params,
-      }
-    );
-    const { result } = res.data;
-    if (typeof result === "string") {
-      throw new Error(result);
-    } else {
-      const lowercased = address.toLowerCase();
+    const responses = await Promise.all([
+      ftmQuery(address),
+      polygonQuery(address),
+    ]);
 
-      txs.value = result.reduce((acc, tx) => {
-        const id = getId(tx.tokenID);
-        if (!(id in acc)) acc[id] = 0;
+    const lowercased = address.toLowerCase();
 
-        if (tx.to === lowercased) acc[id] += 1;
-        else if (tx.from === lowercased) acc[id] -= 1;
-        return acc;
-      }, {} as Record<string, number>);
+    function count(acc: Record<string, number>, tx: Tx) {
+      const id = getId(tx.tokenID);
+      if (!(id in acc)) acc[id] = 0;
+
+      if (tx.to === lowercased) acc[id] += 1;
+      else if (tx.from === lowercased) acc[id] -= 1;
+      return acc;
     }
+
+    txs.value = responses.reduce((acc, res) => {
+      const { result } = res.data;
+      if (typeof result === "string") throw new Error(result);
+      return result.reduce(count, acc);
+    }, {} as Record<string, number>);
   } catch (err) {
     if (axios.isAxiosError(err)) {
       message.value = err.response?.data.message;
