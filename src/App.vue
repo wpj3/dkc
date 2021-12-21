@@ -205,7 +205,7 @@ onUnmounted(() => {
         md:mt-5 md:text-xl
       "
     >
-      An unofficial inventory check for Duelist King NFTs (<a
+      A community-built inventory check for Duelist King NFTs (<a
         class="font-medium text-red-500 hover:text-red-700"
         :href="DKDAOI_URL"
         >DKDAOI</a
