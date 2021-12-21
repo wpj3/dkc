@@ -75,12 +75,14 @@ async function getQuery(address: string) {
     if (typeof result === "string") {
       throw new Error(result);
     } else if (status === "1") {
+      const lowercased = address.toLowerCase();
+
       txs.value = result.reduce((acc, tx) => {
         const id = getId(tx.tokenID);
         if (!(id in acc)) acc[id] = 0;
 
-        if (tx.to === address) acc[id] += 1;
-        else if (tx.from === address) acc[id] -= 1;
+        if (tx.to === lowercased) acc[id] += 1;
+        else if (tx.from === lowercased) acc[id] -= 1;
         return acc;
       }, {} as Record<string, number>);
     }
