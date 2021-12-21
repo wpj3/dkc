@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import axios from "axios";
-import { computed, onMounted, ref } from "vue";
+import { computed, onMounted, onUnmounted, ref } from "vue";
 import DuelistKingCard from "./components/DuelistKingCard.vue";
 import { getId } from "./utils/dkc";
 
@@ -35,7 +35,7 @@ interface Response<T> {
 const DKC_ADDRESS = "0xc44b1022f4895f3c04e965f8a82437a8b5cebb70";
 
 const loading = ref(false);
-const address = ref("");
+const inputAddress = ref("");
 const message = ref("");
 const txs = ref<Record<string, number>>({});
 
@@ -47,7 +47,7 @@ const totalCount = computed(() => {
   return Intl.NumberFormat().format(count);
 });
 
-async function query() {
+async function getQuery(address: string) {
   if (loading.value) return;
 
   loading.value = true;
@@ -57,7 +57,7 @@ async function query() {
     module: "account",
     action: "tokennfttx",
     contractaddress: DKC_ADDRESS,
-    address: address.value,
+    address,
     startblock: "0",
     endblock: "999999999",
     sort: "asc",
@@ -75,16 +75,14 @@ async function query() {
     if (typeof result === "string") {
       throw new Error(result);
     } else if (status === "1") {
-      txs.value = result
-        .filter((tx) => tx.to === address.value)
-        .reduce((acc, tx) => {
-          const id = getId(tx.tokenID);
-          if (!(id in acc)) acc[id] = 0;
+      txs.value = result.reduce((acc, tx) => {
+        const id = getId(tx.tokenID);
+        if (!(id in acc)) acc[id] = 0;
 
-          if (tx.to === address.value) acc[id] += 1;
-          else if (tx.from === address.value) acc[id] -= 1;
-          return acc;
-        }, {} as Record<string, number>);
+        if (tx.to === address) acc[id] += 1;
+        else if (tx.from === address) acc[id] -= 1;
+        return acc;
+      }, {} as Record<string, number>);
     }
   } catch (err) {
     if (axios.isAxiosError(err)) {
@@ -97,14 +95,34 @@ async function query() {
   }
 }
 
-onMounted(() => {
+async function query(address: string) {
+  const data = { address };
+  window.history.pushState(
+    data,
+    "",
+    `/?${new URLSearchParams(data).toString()}`
+  );
+
+  await getQuery(address);
+}
+
+async function queryFromURL() {
   const params = new URLSearchParams(window.location.search);
-
   if (params.has("address")) {
-    address.value = params.get("address") as string;
-
-    query();
+    const address = params.get("address") as string;
+    inputAddress.value = address;
+    await getQuery(address);
   }
+}
+
+onMounted(async () => {
+  queryFromURL();
+
+  window.addEventListener("popstate", queryFromURL);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("popstate", queryFromURL);
 });
 </script>
 
@@ -125,10 +143,11 @@ onMounted(() => {
           outline-none
           text-sm text-center
           font-medium
+          disabled:opacity-50
         "
         placeholder="Wallet address"
         :disabled="loading"
-        v-model.trim="address"
+        v-model.trim="inputAddress"
       />
       <button
         type="button"
@@ -142,9 +161,10 @@ onMounted(() => {
           text-base
           font-medium
           text-white
+          disabled:opacity-50
         "
         :disabled="loading"
-        @click="query"
+        @click="query(inputAddress)"
       >
         {{ loading ? "Please wait..." : "Query" }}
       </button>
