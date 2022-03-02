@@ -340,5 +340,185 @@
       "jpg": "/images/goblin-alchemist.jpg",
       "webp": "/images/goblin-alchemist.webp"
     }
+  },
+  "40": {
+    "id": "40",
+    "name": "Dragon Slayer",
+    "description": "Hailing on the sacred dragon, the might knight vanquishes the darkness and all his foes with the light's guiding power!",
+    "image": {
+      "jpg": "/images/dragon-slayer.jpg",
+      "webp": "/images/dragon-slayer.webp"
+    }
+  },
+  "41": {
+    "id": "41",
+    "name": "Invincible Swordsman",
+    "description": "An immortal God of war, he is considered to be one of the most adept knights who sits at the top of the hierarchy. With the symbol of light, he crushes the evils that lurk within the dark.",
+    "image": {
+      "jpg": "/images/invincible-swordsman.jpg",
+      "webp": "/images/invincible-swordsman.webp"
+    }
+  },
+  "42": {
+    "id": "42",
+    "name": "Kerberos",
+    "description": "This three-headed dog rages in the depths of hell, surrounded by hellfire and brimstone. It is fierce and vicious like no other beast before.",
+    "image": {
+      "jpg": "/images/kerberos.jpg",
+      "webp": "/images/kerberos.webp"
+    }
+  },
+  "43": {
+    "id": "43",
+    "name": "Remus Ripper",
+    "description": "This giant wolf, the mortal enemy of a vampire, has the shape of a human but the strength of a god and rips its victims apart with its vicious fangs and claws.",
+    "image": {
+      "jpg": "/images/remus-ripper.jpg",
+      "webp": "/images/remus-ripper.webp"
+    }
+  },
+  "44": {
+    "id": "44",
+    "name": "Steinmann",
+    "description": "Considered to be some of the strongest mercenaries in a war, these stones are infused with humans' souls which makes them very amicable to humans.",
+    "image": {
+      "jpg": "/images/steinmann.jpg",
+      "webp": "/images/steinmann.webp"
+    }
+  },
+  "45": {
+    "id": "45",
+    "name": "Ice Impaler",
+    "description": "Imprisoned by the Empress Gwyneira, this demon stands tall with icy spikes just waiting for a chance to impale all those who offend him.",
+    "image": {
+      "jpg": "/images/ice-impaler.jpg",
+      "webp": "/images/ice-impaler.webp"
+    }
+  },
+  "46": {
+    "id": "46",
+    "name": "Metsavana",
+    "description": "Born of nature, she scouts the forest for any invaders who may be on their way to cause harm, and her mission is to report them to the king.",
+    "image": {
+      "jpg": "/images/metsavana.jpg",
+      "webp": "/images/metsavana.webp"
+    }
+  },
+  "47": {
+    "id": "47",
+    "name": "Zenobia Glider",
+    "description": "A female deity descending from the sky. She is lifted by heavenly glowing wings endowed by the god and is the guardian for people in need.",
+    "image": {
+      "jpg": "/images/zenobia-the-glider.jpg",
+      "webp": "/images/zenobia-the-glider.webp"
+    }
+  },
+  "48": {
+    "id": "48",
+    "name": "Roaming Fortress",
+    "description": "Created by the fusion of magic and technology, this golem was created to be the safest fortress during a war.",
+    "image": {
+      "jpg": "/images/roaming-fortress.jpg",
+      "webp": "/images/roaming-fortress.webp"
+    }
+  },
+  "49": {
+    "id": "49",
+    "name": "Tyrant X",
+    "description": "Radiated by thunder, this wild predator roams the lands waiting for his latest prey to fall victim to the magnetic power that lives within the spikes on its back.",
+    "image": {
+      "jpg": "/images/tyrant--x.jpg",
+      "webp": "/images/tyrant--x.webp"
+    }
+  },
+  "50": {
+    "id": "50",
+    "name": "Necromancer",
+    "description": "This necromancer wields the power of his reanimated dead minions and communicates with corrupt spirits of the dead and the most vile demons to defeat those who dare to stand in his way.",
+    "image": {
+      "jpg": "/images/necromancer.jpg",
+      "webp": "/images/necromancer.webp"
+    }
+  },
+  "51": {
+    "id": "51",
+    "name": "Orc Shaman",
+    "description": "A shaman from the Orc - a vicious and powerful clan. He absorbs the power of the spirits to serve as a healer and prophet to those who seek his counsel.",
+    "image": {
+      "jpg": "/images/orc-shaman.jpg",
+      "webp": "/images/orc-shaman.webp"
+    }
+  },
+  "52": {
+    "id": "52",
+    "name": "Count Vlad",
+    "description": "Even time cannot stop this immortal man from draining the blood of mere mortals in order to become stronger and using his cruelty and power in his timeless battle against the werewolves.",
+    "image": {
+      "jpg": "/images/count-vlad.jpg",
+      "webp": "/images/count-vlad.webp"
+    }
+  },
+  "53": {
+    "id": "53",
+    "name": "Crushing Mortar",
+    "description": "A death machine so massive that its victims are frozen in awe. Armed with a machine gun and a guillotine, it will rip apart anyone who gets in its way.",
+    "image": {
+      "jpg": "/images/crushing-mortar.jpg",
+      "webp": "/images/crushing-mortar.webp"
+    }
+  },
+  "54": {
+    "id": "54",
+    "name": "Succubus",
+    "description": "This cruel demon reigns from the depths of hell, scaring her prey with her bat wings and instilling fear in those who oppose her with her poison. Her favourite pastime? Stealing the souls of anyone around her.",
+    "image": {
+      "jpg": "/images/succubus.jpg",
+      "webp": "/images/succubus.webp"
+    }
+  },
+  "55": {
+    "id": "55",
+    "name": "Bone Cadre",
+    "description": "Merciless skeleton army released from hell",
+    "image": {
+      "jpg": "/images/bone-cadre.jpg",
+      "webp": "/images/bone-cadre.webp"
+    }
+  },
+  "56": {
+    "id": "56",
+    "name": "Druid Holler",
+    "description": "Druid clan has a gift for being able to communicate with wolves. Druid the Hollder is accompanied by a giant white wolf.",
+    "image": {
+      "jpg": "/images/druid-the-holler.jpg",
+      "webp": "/images/druid-the-holler.webp"
+    }
+  },
+  "57": {
+    "id": "57",
+    "name": "Skytten Saddle",
+    "description": "He is a Sagitarius god reigining in the sky. He will transform into a half-human half-white horse to save people in need on earth.",
+    "image": {
+      "jpg": "/images/skytten-the-saddle.jpg",
+      "webp": "/images/skytten-the-saddle.webp"
+    }
+  },
+  "58": {
+    "id": "58",
+    "name": "Horus' Rage",
+    "description": "You can tell the rumblings of this thunder strike from miles away. It strikes down with the wrath of the gods, destroying anything that gets in its way.",
+    "image": {
+      "jpg": "/images/horus-rage.jpg",
+      "webp": "/images/horus-rage.webp"
+    }
+  },
+  "59": {
+    "id": "59",
+    "name": "Amrita Potion",
+    "description": "This magical potion, created by nature, bestows the precious gift of life on anyone who is fortunate enough to possess it.",
+    "image": {
+      "jpg": "/images/amrita-potion.jpg",
+      "webp": "/images/amrita-potion.webp"
+    }
   }
 }
