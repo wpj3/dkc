@@ -1,0 +1,11 @@
+query Query($filterInput: CardFilterInput!) {
+  cards(filter: $filterInput) {
+    total
+    records {
+      cardId
+      name
+      description
+      imageUrl
+    }
+  }
+}
