@@ -8,7 +8,7 @@ interface ImageUrl {
 }
 
 interface Card {
-  id: string;
+  cardId: string;
   name: string;
   description: string;
   image: ImageUrl;
@@ -33,19 +33,7 @@ const count = computed(() => Intl.NumberFormat().format(props.count));
       />
     </picture>
     <div
-      class="
-        absolute
-        bottom-0
-        right-0
-        px-2
-        py-1
-        mx-auto
-        bg-black
-        text-white
-        rounded-tl-lg
-        font-bold
-        text-sm
-      "
+      class="absolute bottom-0 right-0 px-2 py-1 mx-auto bg-black text-white rounded-tl-lg font-bold text-sm"
     >
       &times;{{ count }}
     </div>
